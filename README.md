@@ -1,6 +1,6 @@
-# fastify-plugin-example
+# Redirect Away From Heroku
 
-Fastify plugin template.
+Fastify plugin to redirect away from a Heroku domain.
 
 ## Github Actions/Workflows
 
