@@ -28,11 +28,11 @@
     "fastify-plugin": "^3.0.0"
   },
   "devDependencies": {
-    "tap": "^15.0.6",
     "fastify": "^3.0.0",
     "fastify-cli": "^2.5.1",
+    "lint-staged": "^11.1.1",
     "standard": "^16.0.3",
-    "lint-staged": "^10.2.11"
+    "tap": "^15.0.6"
   },
   "lint-staged": {
     "*.{js,jsx}": [
