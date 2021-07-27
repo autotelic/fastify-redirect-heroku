@@ -1,6 +1,6 @@
 {
   "name": "@autotelic/fastify-redirect-heroku",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Plugin for fastify to redirect away from a heroku domain",
   "main": "index.js",
   "directories": {
