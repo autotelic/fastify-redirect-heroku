@@ -1,7 +1,7 @@
 {
-  "name": "@autotelic/redirect-away-from-heroku",
+  "name": "@autotelic/fastify-redirect-heroku",
   "version": "0.0.0",
-  "description": "Plugin for fastify",
+  "description": "Plugin for fastify to redirect away from a heroku domain",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -15,24 +15,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/autotelic/fastify-plugin-template.git"
+    "url": "git+https://github.com/autotelic/fastify-redirect-heroku.git"
   },
   "keywords": [],
   "author": "Autotelic Development Ltd <info@autotelic.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/autotelic/fastify-plugin-template/issues"
+    "url": "https://github.com/autotelic/fastify-redirect-heroku/issues"
   },
-  "homepage": "https://github.com/autotelic/fastify-plugin-template#readme",
+  "homepage": "https://github.com/autotelic/fastify-redirect-heroku#readme",
   "dependencies": {
     "fastify-plugin": "^3.0.0"
   },
   "devDependencies": {
-    "tap": "^15.0.6",
     "fastify": "^3.0.0",
     "fastify-cli": "^2.5.1",
+    "lint-staged": "^11.1.1",
     "standard": "^16.0.3",
-    "lint-staged": "^10.2.11"
+    "tap": "^15.0.6"
   },
   "lint-staged": {
     "*.{js,jsx}": [
