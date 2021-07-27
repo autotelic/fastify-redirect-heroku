@@ -1,24 +1,29 @@
-# Redirect Away From Heroku
+# Fastify Redirect Heroku
 
-Fastify plugin to redirect away from a Heroku domain.
+> A Fastify plugin to redirect away from a Heroku domain to an authorized host.
 
-## Github Actions/Workflows
+## Usage
 
-#### Getting Started
+```sh
+npm i @autotelic/fastify-redirect-heroku
+```
 
-* Create release and test workflows
-  ```sh
-  cd .github/workflows
-  cp release.yml.example release.yml
-  cp test.yml.example test.yml
-  ```
-* Update `release.yml` and `test.yml` with appropriate workflow for your plugin
+```js
+const redirectHeroku = require('@autotelic/fastify-redirect-heroku')
 
-#### Triggering a Release
+module.exports = async function (fastify, options) {
+  fastify.register(redirectHeroku, {
+    authHost: 'https://example.com/',
+    herokuAppName: 'example-api'
+  })
+}
+```
 
-* Trigger the release workflow via release tag
-  ```sh
-  git checkout main && git pull
-  npm version { minor | major | path }
-  git push --follow-tags
-  ```
+#### API
+
+### `Options`
+
+| Name | Status | Type | Default | Description |
+| ------- | :---: | :---: | :---: | --- |
+| `authHost` | **Required** | String | - | The authorized host to redirect to |
+| `herokuAppName` | **Required** | String | - | The name of the heroku app to redirect away from |

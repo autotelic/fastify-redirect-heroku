@@ -2,7 +2,7 @@
 
 const fp = require('fastify-plugin')
 
-async function redirectOnRequest (fastify, opts) {
+async function redirectHeroku (fastify, opts) {
   const { authHost, herokuAppName } = opts
   await fastify.addHook('onRequest', redirect)
 
@@ -14,4 +14,4 @@ async function redirectOnRequest (fastify, opts) {
   }
 }
 
-module.exports = fp(redirectOnRequest, { name: 'redirect-on-request' })
+module.exports = fp(redirectHeroku, { name: 'fastify-redirect-heroku' })
